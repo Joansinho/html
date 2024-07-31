@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    color:  #444;
+}
+
+h2 {
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 100;
+    letter-spacing: 3px;
+}
+form {
+    background: #ededed;
+    margin: auto;
+    margin-top: 40px;
+    max-width: 500px; /* lo maximo que se pede estirar el form */
+    padding: 10px 40px;
+    box-shadow: 0 0 20px 0 #0006;
+    border-radius: 10px;
+}
+
+.form_input {
+    padding: 10px 10px;
+}
+
+input, textarea {
+    width: 100%; /* hace que el text area tenga un ancho minimo del 100% */
+    box-sizing: border-box; 
+    padding: 8px 5px;
+    border: none; /* lo ponemos para que los otros bordes no se vean, ya que estos inputs traen borde por defecto */
+    /* lo ponemos antes porque si se pone despues se sobreescribe y no aparece ningun borde, por eso es estilo en cascada */
+    border-left: 2px solid #666;
+    box-shadow: 0 0 10px #0003;
+    border-radius: 5px;
+}
+
+textarea {
+    min-width: 100%;
+    resize: vertical; /* hace que solo se pueda resizear verticalmente, tambien se puede horizontal, o denegarlo */
+    min-height: 100px; 
+    max-height: 200px; 
+    /* esto hace que el textarea tenga un min y un max de altura */
+    font-family: sans-serif; /* se le debe declarar el font aparte, porque trae su propia tipografia */
+}

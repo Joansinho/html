@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Labels</title>
+    <!-- forma que tenemos de etiquetar individualmente un elemento de input, un campo donde se le pide datos al usuario debe tener un label -->
+</head>
+<body>
+    <form action="">
+        <h2>Formulario de contacto</h2>
+    
+        <div class="form_input">
+            <label for="Nombre">Nombre Completo</label> <!--asi se define un label-->
+            <input type="text" placeholder="Joan Fontecha" id="Nombre">
+        </div>
+        
+        <div class="form_input">
+            <label for="">Correo Electronico</label>
+            <input type="email" placeholder="example@gmail.com">
+        </div>
+        <div>
+            <label for="">mensaje</label>
+            <textarea placeholder="pene" maxlength="140"></textarea> <!--el max lenght indica que tanto podemos escribir-->
+        </div>
+    </form>
+    <!-- en estos inputs se puede observar la funcion del label, al dar click donde dice nombre completo el label permitira que el focus sea puesto en el imput, para esto se le debe dar id al input y for al label con el mismo valor. -->
+    
+</body>
+</html>

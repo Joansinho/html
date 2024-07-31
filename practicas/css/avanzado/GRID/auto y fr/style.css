@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    font-family: sans-serif ;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr auto ; /* con auto se distribuye el espacio sin contenido */
+    grid-template-rows: 1fr 200px auto;  /* el fr distribuye en partes iguales el ancho total para el grid, fr significa fracciones. el fr se parece al flex grow*/
+}
+
+.grid-item {
+    background-color: #48e;
+    margin: 10px;
+    padding: 10px;
+    font-size: 40px;
+    color: #fff;
+}

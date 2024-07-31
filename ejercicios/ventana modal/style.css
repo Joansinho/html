@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.content {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0009;
+}
+
+.lorem {
+    font-size: 25px;
+}
+
+.modal__box {
+    margin: auto;
+    margin-top: 10px;
+    padding: 20px;
+    width: 80%;
+    background-color: #fff;
+    border-top: 7px solid #000;
+    border-radius: 10px;
+    box-sizing:border-box;
+
+
+}
+
+.modal__title {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 30px;
+    margin: 0;
+}
+
+.modal__content {
+    text-align: center;
+    font-size: 17px;
+}

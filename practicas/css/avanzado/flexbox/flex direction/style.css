@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.flexbox {
+    display: flex; /* los elementos se alinean y se ajustan */
+    flex-direction: row-reverse; /* los elementos se alinean de izquierda a derecha. en row se alinean de derecha a izquierda */
+/*  flex-direction: column; se apilan los elementos de arriba a abajo */
+/*  flex-directio: column-reverse; se apilan de abajo a arriba */
+}
+/* si se le agrega padding a un flexbox no va a ser flexible */
+
+.flex-item {
+    width: 100px;
+    height: 150px;
+    background-color: #911;
+    margin: 10px;
+}
+
+.flex-item:first-child {
+    background-color: #d54;
+}

@@ -1,0 +1,11 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+img {
+    width: 300px;
+    height: 600px;
+    object-fit: Contain; /* tiene varios valores. Fill: es la de por defecto, la imagen se estira segun las medidas que se definan. Contain: hace que una de las medidas que definimos a la imagen este al 100% para no deformarla, es parecido al contain de background-size. Cover: se adapta a la resolucion total.  None: mantiene la resolucion, no se ajusta y la imagen queda en la resolucion original. Scale-down: se queda con la resolucion mas pequeña, si es 500px x 400px se queda con 400px*/
+    object-position: 0; /* Tambien se le puede dar medidas, top, bottom, left, right, haciendo que la imagen se mueva segun la medida que le demos. */
+}

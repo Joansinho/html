@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+}
+div {
+    background-color: #0005;
+    padding: 20px;
+    margin : 400px 0;
+}
+
+.div--link { /* este elemento es un elemento en linea, no en bloque. Al definir el display cambian a ser en bloque */
+    background-color: red;
+    display: block;
+}
+
+.nav {
+    background-color: #49e;
+    text-align: center;
+}
+
+.list {
+    margin: 0;
+}
+
+.list--item {
+    display: inline-block; /* permite apilar elementos */
+    font-size: 25px;
+    padding: 20px;
+    background-color: #49e;
+}
+
+.list--link {
+    color: white;
+    text-decoration: none;
+}
+
+.list--item:hover {
+    background-color: #6af;
+    border-radius: 10px;
+
+}

@@ -1,0 +1,3 @@
+1. buscar el boceto de cómo queremos que quede la estructura de la página
+2. paleta de colores
+3. imagenes y contenido para la pagina

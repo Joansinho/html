@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.flexbox {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    height: 100px;
+    margin: 40px;
+    justify-content: space-evenly;
+    gap: 10px; /* separacion entre caja y caja */
+}
+
+.flex-item {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(190, 0, 0); 
+    flex-grow: 1; /* ocupa todo el espacio disponible y no respeta el justify content, entre mas valor le demos mas ocupara en el contenedor un item */
+}
+
+.flex-item:first-child {
+    background-color: rgb(255, 145, 145);
+    flex-shrink: 3; /* definimos cuanto se va a encojer el flex item, en 0 no se encojen. y de ahi pa arriba elejimos que tanto se encojen */
+}
+
+.flex-item:last-child {
+    background-color: rgb(65, 0, 0);
+    flex-basis: 200px; /* en los flex item se usa mas flex basis que widht. indica lo maximo que se puede encojer y da el efecto de encojerse y alargarse lo que sea necesario ademas de que se define en el eje principal, asi que puede ser vertical u horizontal*/
+    flex-grow: 1;
+}

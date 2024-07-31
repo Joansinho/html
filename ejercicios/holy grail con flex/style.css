@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    min-height: 100vh;
+}
+
+div, body, header, nav, ul, footer {
+    box-sizing: border-box;
+}
+
+.main-wrapper, header, footer {
+    width: 100%;
+}
+
+aside, main {
+    padding: 10px;
+}
+
+/*           HEADER           */
+.header { /* le dimos un color de fondo al navbar */
+    background-color: #8af;
+}
+.main-navbar ul { /* apilamos los ul y les quitamos el padding */
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+
+.main-navbar li { /* quitamos los puntos de los a y les dimos una margen para que se vean mas separados */
+    list-style: none;
+    margin: 4px;
+}
+
+.main-navbar a { /* le dimos un color blanco a los links del main nav. ademas le dimos un display inline-block para poder darle un padding */
+    color: #fff;
+    display: inline-block;
+    padding: 9px;
+}
+
+nav a { /* le quitamos la decoracion de los links a todos los a dentro de un nav */
+    text-decoration: none;
+}
+
+/*          MAIN SECTION             */
+
+.main-wrapper {
+    display: flex; /* se va a apilar los elementos */
+    margin: 0;
+    flex-grow: 1;
+}
+
+.main-wrapper aside {
+    flex-grow: 1;
+}
+
+.secondary-navbar {
+    min-width: 200px;
+}
+
+.secondary-navbar ul {
+    margin: 0;
+}
+
+.secondary-navbar li {
+    list-style: none;
+}
+
+.secondary-navbar a {
+    color: #8af;
+    display: inline-block;
+    padding: 25px 0;
+}
+
+/*          FOOTER           */
+footer {
+    margin-top: auto;
+    background-color: #8af;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width:600px) {
+    aside:last-child {
+        display: none;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .main-wrapper {
+        flex-direction: column;
+    }
+    .main-wrapper h1 {
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .secondary-navbar {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+}

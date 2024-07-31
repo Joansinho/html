@@ -1,0 +1,10 @@
+.formulario {
+    background-color: red;
+    padding: 10px 10px 10px 10px; /* si ponemos los valores de esta manera ira al sentido de las manillas del reloj. Es decir
+    top, right, bottom y left. Es un shorthand*/
+}
+
+.formulario_input {
+    padding: 10px 1opx; /* ahora si se pone asi, el primer valor representara top & bottom y el segundo valor left & right. */
+    margin: 10px; /* aplica el mismo shorthand que el padding */
+}

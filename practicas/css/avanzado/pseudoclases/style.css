@@ -1,0 +1,34 @@
+h1:hover { /* selecciona el h1 cuando el mouse este encima de el */
+    color: #48f;
+    font-family: sans-serif;
+    margin: 20px;
+}
+
+h1:active { /* define el cambio del elemento cuando se le da click a el mismo */ 
+    color: #fffa;
+    background-color: #0006;
+}
+
+li:first-child { /*selecciona el primer elemento de la lista */
+    color: #48f;
+}
+
+li:last-child { /* selecciona el ultimo */
+    color: #f48a;
+}
+
+li:nth-child(2) { /* selecciona un elemento en especifico, el numero interpreta la celda que se quiere seleccionar */
+    color: #8f2; 
+}
+
+.lista li:not(.excluir) { /*excluye la clase dentro del parentesis */
+    color: #fff;
+}
+
+div {
+    border: 2px solid #000;
+}
+
+div:empty { /* cambia el elemento en caso de que este vacio */
+    border: none;
+}

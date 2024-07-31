@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #f00;
+    top: 0;
+    position: fixed; /* muy similar a position absolute. La diferencia es que fixed toma de punto de referencia la ventana completa de la pagina, mas no su contenedor y aunque haya mas texto abajo y se escrolee la caja seguira teniendo la posicion que le dimos. Por eso su punto de referencia es la ventana completa */
+}
+.container {
+    width: 100%;
+    height: 200px;
+    background: #00f;
+}

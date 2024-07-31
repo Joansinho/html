@@ -1,0 +1,43 @@
+body {
+    background: #0001;
+}
+.box {
+    width: 400px;
+    height: 400px; 
+    margin: auto;
+    border-top: 10px solid green; 
+    border-radius: 20px;
+    background: linear-gradient(red, green) /* con esta funcion se convierte en un gradiente lineal, despues los dos colores */
+
+}
+
+h2 {
+    text-align: center;
+}
+
+.box-r {
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    margin-top: 40px;
+    border-left: 10px solid #000 ;
+    border-radius: 20px;
+    background: linear-gradient(to right, transparent,  #000); /* "to right" hace que el gradiente cambie su direccion */
+}
+
+.box-2 {
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 20px;
+    background: linear-gradient(red 50%, green, blue); /* se pueden dar los colores que uno quiera, con el porcentaje se puede medir la cantidad del color  */
+}
+
+.radial-gradient {
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    border-radius: 40px;
+    background: radial-gradient(blue, red); /* gradiente tipo circular, tambien esta el conic-gradient, pero q pereza*/
+}

@@ -1,0 +1,88 @@
+/* este layout tiene una buena semantica */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+/* HEADER SECTION */
+
+.header {
+    height: 100vh;
+    box-sizing: border-box;
+    background-image: url("background.jpg");
+    background-size: cover;
+    color: #eee;
+    display: flex;
+}
+
+.header__overlay {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.562);
+    position: absolute; /* como es un overlay queremos que no ocupe espacio en la pagina */
+    z-index: 1;
+}
+
+.header__item-container {
+    position: relative;
+    z-index: 10;
+    margin: auto; /* junto con el display flex se centra el contenido */
+    text-align: center;
+    max-width: 800px;
+}
+
+.header__item-container img {
+    max-width: 30%;
+    min-width: 300px;
+}
+
+.header__item-container p {
+    text-wrap: pretty;
+}
+
+h1 {
+    margin:0; /* para que no haya margin collapse */
+    text-transform: uppercase;
+    font-size: 35px;
+    text-wrap: balance;
+}
+
+/* NAVBAR SECTION */
+
+nav {
+    background-color: #bbb;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20vw;
+}
+
+.nav__ul {
+    margin: 0; /* para que no haya margin collapse */
+    display: flex;
+}
+
+.nav__link {
+    color: #000;
+    width: 100px;
+    padding: 14px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+}
+
+.nav__link:hover {
+    color: #fff;
+    background-color: #0002;
+    border-radius: 5px;
+}
+
+.nav__item {
+    list-style: none; /* para quitar el puntito de las listas */
+}
+
+.nav__logo {
+    width: 43px;
+    margin: 0;
+}

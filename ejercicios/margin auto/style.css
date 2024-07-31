@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(255, 228, 195);
+    font-family: sans-serif;
+    text-transform: uppercase;
+    color: white;
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0.76);
+    text-align: center;
+    width: 400px;
+    margin: auto; /* esto centrara horizontalmente epicamente la caja, quede wtf */
+}
+
+h1 {
+    padding-top: 20px;
+    letter-spacing: 8px;
+}
+
+h2 {
+    font-size: 15px;
+    letter-spacing: 3px;
+}
+
+p {
+    font-size: 10px;
+    padding: 5px 10px 20px 10px;
+    background-color: rgba(255, 255, 255, 0.486);
+}

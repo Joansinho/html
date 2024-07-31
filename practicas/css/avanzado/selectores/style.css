@@ -1,0 +1,18 @@
+img[src="css.png"] { /* de esta manera se selecciona un elemento por su atributo especifico */
+    width: 500px;
+    height: 500px;
+}
+
+img[src$="png"] { /* de esta manera se selecciona todos los elementos img que tengan una imagen con terminacion png ($) y para seleccionar las que comienzan con algun valor se usa ^ */
+    width: 500px;
+    height: 500px;
+}
+
+ul strong { /* de esta manera seleccionamos un elemento que si o si este dentro de otra etiqueta. En este caso el li dentro del ul, el li q no esta dentro de esto no cambia */
+    color: #f00;
+}
+
+li > strong { /* de esta manera seleccionamos una etiqueta hija directa, ya que de la manera anterior independiente si es hija o nieta funciona. De esta manera solo cambiara la que es estrictamente hija */
+    color: #00f;
+}
+/* tambien se puede de manera adyacente, se usa el + y seleccionamos etiquetas que esten enseguida de otras */ 

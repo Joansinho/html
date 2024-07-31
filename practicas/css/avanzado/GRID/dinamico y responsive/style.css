@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    font-family: sans-serif ;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* autofit esta constantemente comprobando si es posible crear otra columna y lo hará, cuando no hay espacio suficiente crea filas para que se distribuyan los elementos */
+    grid-template-rows: repeat(3, 200px);
+    grid-auto-flow: row;
+    grid-auto-rows: 200px;
+    grid-auto-columns: 1fr;
+    gap: 10px;
+}
+
+.grid-autofill {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));; /* autofill crea columnas asi no hayan elementos, esa es la principal diferencia */
+    grid-template-rows: repeat(3, 200px);
+    grid-auto-rows: 200px;
+    gap: 10px;
+}
+/* en resumen autofill rellena y autofit adapta. */
+
+.grid-item {
+    background-color: #48e;
+    padding: 10px;
+    font-size: 40px;
+    color: #fff;
+}
+
+.grid-item__fill {
+    background-color: #f00;
+    padding: 10px;
+    font-size: 40px;
+    color: #fff;
+}

@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.flexbox {
+    display: flex; /* los elementos se alinean y se ajustan */
+/*  flex-wrap: row;  hace que los elementos vayan hacia abajo si no hay espacio suficiente */
+    flex-flow: row wrap; /* permite definir flex-direction y flex-wrap */
+}
+
+.flex-item {
+    width: 100px;
+    height: 150px;
+    background-color: #911;
+    margin: 10px;
+}
+
+.flex-item:first-child {
+    background-color: #d54;
+}

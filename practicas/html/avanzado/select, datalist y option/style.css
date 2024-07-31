@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    background: #66f4;
+    font-family: sans-serif;
+}
+
+div {
+    width: 40%;
+    margin: auto;
+    margin-top: 50px;
+    padding: 25px 30px;
+    padding-bottom: 100px;
+    background: #66e5;
+    border-top: #66e solid 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 1px #0005;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    margin-bottom: 20px;
+    font-weight: 100;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+label {
+    font-weight: 100;
+    font-size: 20px;
+    text-align: center;
+    line-height: 2;
+}
+
+.label__datalist {
+    line-height: 2;
+}
+
+select {
+    width: 100%;
+    background-color: #66e4;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+option { /* al option no se le pueden dar muchos mas atributos */ 
+    text-align: center; 
+    background: #66e4; 
+}
+
+input {
+    width: 100%;
+    background-color: #66e4;
+    padding: 10px 0;
+    border: none;
+    border-radius: 10px;
+}

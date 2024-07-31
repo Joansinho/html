@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #ddd;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: #f00;
+    margin: auto;
+    margin-top: 50px;
+    outline: 10px solid #00f ; /* se define igual que el borde pero este no hace crecer la caja, esta entre el margin y el border  y no ocupa espacio es un aspecto visual*/
+    outline-offset: 40px; /* define que tanto separa el outline de la caja */
+    border-radius: 1px; /* si definimos border radius el outline tambien cambia */
+    /* tiene casi los mismos valores que el border, pero no ocupa espacio. */
+}
+
+input {
+    width: 20%;
+    padding: 5px;
+    margin-top: 70px;
+    border-top: 2px solid #000;
+}
+
+input:focus {
+    outline: none; /* podemos quitarle el outline a los inputs y definirlo nosotros mismos */
+    border-top:2px solid #00f;
+}
+
+input:focus-visible {
+    outline: none; /* lo mejor es hacerlo asi para tecnologias accesibles */
+}

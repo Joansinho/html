@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+
+nav, header, footer, aside, main {
+    padding: 20px;
+    border: 2px solid #000;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: minmax(200px, 1fr) minmax(300px, 3fr) minmax(200px, 1fr);
+    grid-template-rows: auto 1fr auto;
+    grid-auto-flow: dense;
+    gap: 10px;
+    margin: auto;
+    min-height: 100vh;
+    grid-template-areas: 
+    "header header header"
+    "nav main aside"
+    "footer footer footer";
+    /* eje horizontal
+    justify-items:; alinea items dentro de la celda
+    justify-content:; alinea las celdas 
+    
+    eje vertical ---- align/justify-self:; para cuandos se quiera mover un item en especifico
+    align-items:;
+    align-content:;  es lo mismo pero en el eje vertical
+    */
+} 
+
+header {
+    grid-area: header;
+    background-color: #999;
+    color: #fff;
+    border-color: #999;
+}
+
+nav {
+    grid-area: nav;
+}
+
+main {
+    grid-area: main;
+    min-width: 300px;
+    max-width: 700px;
+}
+
+aside {
+    grid-area: aside;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #999;
+    color: #fff;
+    border-color: #999;
+}

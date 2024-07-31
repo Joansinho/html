@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #f00;
+    position: sticky;
+    top: 20px; /* es parecido a el fixed pero cuando definimos alguna medida (top, left...) va a llegar hasta el punto que definimos y se va a anclar */
+    left: 20px;
+}
+.container {
+    width: 100%;
+    height: 200px;
+    background: #00f;
+}

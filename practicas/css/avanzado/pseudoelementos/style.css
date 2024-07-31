@@ -1,0 +1,28 @@
+h1::first-letter { /* selecciona para cambiar la primera letra */
+    color: red;
+}
+
+p::first-line { /* se modifica la primer linea del parrafo en este caso */
+    color: red; 
+}
+
+p::selection { /* cuando se subraya con el mouse algo se modifica */
+    background-color: aqua;
+}
+
+input::placeholder { /*modifica el placeholder */
+    color: white;
+    background-color: #0006;
+}
+
+li::marker { /* modifica el punto de los li */
+    color: blue;
+}
+
+li::after { /* cambia el elemento despues de */
+    content: ' Despues';
+}
+
+li::before { /* cambia el elemento antes de */
+    content: 'Antes: ';
+}

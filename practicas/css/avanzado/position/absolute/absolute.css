@@ -1,0 +1,22 @@
+.container-box {
+    background-color: #7774;
+    border: 2px solid #000;
+    margin: auto;
+    margin: 70px;
+    position: relative; /* si ponermos posicion relativa al contenedor de un absolute su punto de referencia sera la misma */
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    color: white;
+    background-color: red;
+}
+
+.box--blue {
+    background-color: blue;
+    position: absolute; /* no ocupa lugar en la pagina, sigue existiendo la caja pero está por debajo de las demas, ya que no esta ocupando nada */
+    /* y su punto de referencia es la etiqueta html. Desde el inicio de la pagina */
+    left: 200px;
+    top: 0;
+}
