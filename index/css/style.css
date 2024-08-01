@@ -1,0 +1,367 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.about-us--p::selection, .login::selection, .home::selection, .login-icon::selection {
+    background-color: transparent;
+}
+
+
+/* HEADER SECTION */
+.header {
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    container-type: inline-size;
+    container-name: header;
+}
+
+.header__container {
+    width: 100%;
+    background-color: #bae0f5;
+    /* background-color: #accddf; */
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: #00000013 1px 1px 5px;
+    position: sticky;
+    top: 5px;
+    gap: 20px;
+}
+
+.header__logo {
+    position: inherit;
+    left: 5px;
+    width: 50px;
+}
+
+.header__list {
+    display: flex;
+    align-items: center;
+    position: inherit;
+    right: 10px;
+    gap: 15px;
+}
+
+.header__element {
+    list-style: none;
+}
+
+.header__link{
+    text-decoration: none;
+    color: #fff;
+}
+
+.login{
+    padding: 7px;
+    font-size: 17px;
+    background-color: #5379e2;
+    border-radius: 10px;
+    border: #0000000c 0.5px solid;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    flex-grow: 3;
+    display: none;
+}
+
+.login-icon {
+    position: inherit;
+    width: 30px;
+}
+
+.home {
+    width: 30px;
+}
+/* END HEADER SECTION */
+
+/* HEADER QUERIES */
+@container header (min-width: 600px){
+    .header__logo {
+        width: 70px;
+    }
+
+    .header__list {
+        gap: 10px;
+    }
+
+    .home {
+        display: block;
+        width: 35px;
+    }
+
+    .home::selection {
+        background-color: transparent;
+    }
+
+    .login-icon {
+        display: none;
+    }
+
+    .login {
+        display: inline;
+    }
+}
+/* END HEADER QUERIES */ 
+
+
+/* ABOUT US SECTION */
+
+.about-us--div {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    border-bottom: #000 5px solid;
+}
+
+.img-section__container {
+    display: flex;
+    justify-content: center;
+}
+
+.about-us--img {
+    width: 100%;
+}
+
+.about-us--h1 {
+    position: absolute;
+    color: #272727;
+    font-size: 45px;
+    letter-spacing: 5px;
+    top: 200px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700 ;
+    font-style: italic;
+}
+/* END ABOUT US SECTION */
+
+
+/* SERVICES SECTION */
+
+.main {
+    position: relative;
+}
+
+.services__container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 80%;
+    background-color: #ffffff;
+    position: relative;
+    margin: auto;
+    margin-top: 60px;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: #0000004f 0px 10px 10px;
+    color: #000000; 
+    overflow: hidden;
+}
+
+.services__h4 {
+    font-size: 25px;
+    letter-spacing: 5px;
+    color: #071f5f;
+    font-family: "Bodoni Moda SC", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    /* position: absolute; 
+    top: -25;  */
+}
+
+.services__h2 {
+    font-size: 48px;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    color: #587de4;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    /* position: inherit; */
+    /* top: -15; */
+}
+
+.services__content-container {
+    display: flex;
+    width: 100%;
+}
+
+.services__content-container-p {
+    padding-right: 125px;
+}
+
+.services__content {
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.img-services__container {
+    position: relative;
+}
+
+.img-services {
+    position: inherit;
+    width: 500px;
+    border: #00000017 1px solid;
+    border-radius: 30px;
+    margin-right: 20px;
+    top: -50px;
+}
+
+/* END SERVICES SECTION */
+
+/* MISSION SECTION */
+
+.mission--h4 {
+    position: static;
+    font-size: 48px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    color: #ffffff;
+}
+
+.bar--h4__container {
+    width: 70%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: end;
+    background-color: #587de4;
+}
+
+.mission__container {
+    width: 70%;
+}
+
+.mission--content {
+    margin-top: 15px;
+    font-size: 21px;
+    padding: 30px;
+    text-align: left;
+    text-wrap: pretty;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+}
+
+/* END MISSION SECTION */   
+
+/* SOME PRODUCTS SECTION */
+.some-products__container {
+    background-color: #ffffff;
+    width: 100%;
+    margin-top: 75px;
+}
+
+.title__container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #000618;
+    color: #fff;
+    font-family: "Bodoni Moda SC", serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 50px;
+    letter-spacing: 5px;
+    /* border-top-right-radius: 50px;
+    border-top-left-radius: 50px; */
+}
+
+.products__container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.products {
+    display: flex;
+    background-color: #fff;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 25px;
+    box-shadow: #0000001a 10px 10px 10px;
+}
+
+.products h5{
+    font-size: 35px;
+}
+
+.products img {
+    width: 350px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.data__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.data__container--description {
+    padding: 30px;
+    text-align: center;
+}
+/* END SOME PRODUCTS SECTION */
+
+/* FOOTER SECTION */
+
+.footer__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 100px;
+    background-color: #bae0f5;
+}
+
+.contact__box {
+    width: 100%;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact__box ul {
+    list-style: none;
+}
+
+.contact__box a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.contact__icon {
+    width: 35px;
+    position: inherit;
+}
+
+.info__box {
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.info__box ul {
+    list-style: none;
+    text-align: center;
+}
